@@ -1,23 +1,46 @@
 {
-    "author": "jewel2000k@yahoo.com",
+    "author": "scottybrackett@gmail.com",
     "dependencies": {},
     "keywords": [],
-    "name": "watchface",
+    "name": "time_weather",
     "pebble": {
         "capabilities": [
-            ""
+            "location"
         ],
-        "displayName": "Watchface",
-        "enableMultiJS": true,
-        "messageKeys": [],
+        "displayName": "TIME_WEATHER",
+        "enableMultiJS": false,
+        "messageKeys": {
+            "KEY_CONDITIONS": 1,
+            "KEY_TEMPERATURE": 0
+        },
         "projectType": "native",
         "resources": {
-            "media": []
+            "media": [
+                {
+                    "file": "images/asl_resized_mono.png",
+                    "name": "SPARK_ICON",
+                    "type": "png"
+                },
+                {
+                    "file": "fonts/8-BIT WONDER.TTF",
+                    "name": "ATE_BIT_24",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/8-BIT WONDER.TTF",
+                    "name": "ATE_BIT_14",
+                    "type": "font"
+                }
+            ]
         },
         "sdkVersion": "3",
-        "uuid": "08ba00f4-0cda-40fb-af8f-536d907f6b57",
+        "targetPlatforms": [
+            "aplite",
+            "basalt"
+        ],
+        "uuid": "66a1e271-1c08-463c-ae5a-df468c62af9b",
         "watchapp": {
-            "watchface": false
+            "watchface": true
         }
     },
     "version": "1.0.0"
